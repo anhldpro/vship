@@ -23,9 +23,10 @@
                 <div class="table-struct full-width full-height">
                     <div class="table-cell vertical-align-middle auth-form-wrap">
 
-                        @include('share.errors')
-                        @include('share.success')
                         <div class="auth-form  ml-auto mr-auto no-float">
+
+                            @include('share.errors')
+                            @include('share.success')
                             <div class="row">
                                 <div class="col-sm-12 col-xs-12">
                                     <div class="mb-30">

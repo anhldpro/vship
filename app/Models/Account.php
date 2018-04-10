@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Account extends Authenticatable
 {
+    use Notifiable;
+
     protected $table = "account";
 
 

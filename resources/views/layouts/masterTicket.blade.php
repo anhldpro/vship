@@ -64,7 +64,7 @@
                             <li>
 
                                 @if (Auth::guard('web')->check())
-
+                                    <span><i class="fa fa-user"></i> </span>
                                     <a href="javascript:;" class="dropdown-toggle home" data-toggle="dropdown"
                                        data-hover="dropdown" data-close-others="true">{{Auth::user()->name}}
                                         <span class="caret link-frame"></span>
@@ -88,16 +88,16 @@
                                     </ul>
                             @else
                                 <li><a href="{{ route('login') }}" class="home">{{ trans('vexe.login')}} </a></li>
-                                @endif
+                            @endif
 
-                                </li>
-                                <li>
-                                    <select class="form-control" id="languageSwitcher">
-                                        <option value="">{{trans('vexe.language')}}</option>
-                                        <option value="vi">{{trans('vexe.vietnamese')}}</option>
-                                        <option value="en" {{-- {{ Lang::locale() === 'en' ? 'selected' : '' }} --}}>{{trans('vexe.eng')}}</option>
-                                    </select>
-                                </li>
+                            </li>
+                            <li>
+                                <select class="form-control" id="languageSwitcher">
+                                    <option value="">{{trans('vexe.language')}}</option>
+                                    <option value="vi">{{trans('vexe.vietnamese')}}</option>
+                                    <option value="en" {{-- {{ Lang::locale() === 'en' ? 'selected' : '' }} --}}>{{trans('vexe.eng')}}</option>
+                                </select>
+                            </li>
 
                         </ul>
                     </div>

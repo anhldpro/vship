@@ -12,21 +12,16 @@ use Auth;
 use Illuminate\Support\MessageBag;
 
 
-use Illuminate\Foundation\Auth\ThrottlesLogins;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-
 class AccountController extends Controller
 {
 
-
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     protected $redirectTo = '/';
 
 
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+//        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
 
     public function getLogin () {
