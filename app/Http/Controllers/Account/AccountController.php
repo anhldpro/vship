@@ -93,7 +93,8 @@ class AccountController extends Controller
                 'username' => 'required',
                 'email' => 'required|email|unique:account,email',
                 'password' => 'required|same:c_password',
-                'c_password' => 'required'
+                'c_password' => 'required',
+                'acct_type' => 'required'
             ]);
 
             $input = $request->all();

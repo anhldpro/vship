@@ -40,19 +40,34 @@
                                             {{ csrf_field() }}
                                             <div class="form-group">
                                                 <label class="control-label mb-10" for="exampleInputName_1">{{trans('vexe.register_uname')}}</label>
-                                                <input type="text" name="username" class="form-control" required="" id="exampleInputName_1" placeholder="{{trans('vexe.register_uname_tip')}}">
+                                                <input type="text" name="username" class="form-control" required="" id="exampleInputName_1"
+                                                       placeholder="{{trans('vexe.register_uname_tip')}}">
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label mb-10" for="exampleInputEmail_2">{{trans('vexe.register_email')}}</label>
-                                                <input type="email" name="email" class="form-control" required="" id="exampleInputEmail_2" placeholder="{{trans('vexe.register_email_tip')}}">
+                                                <input type="email" name="email" class="form-control" required="" id="exampleInputEmail_2"
+                                                       placeholder="{{trans('vexe.register_email_tip')}}">
                                             </div>
                                             <div class="form-group">
                                                 <label class="pull-left control-label mb-10" for="exampleInputpwd_2">{{trans('vexe.register_pass')}}</label>
-                                                <input type="password" name="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="{{trans('vexe.register_pass_tip')}}">
+                                                <input type="password" name="password" class="form-control" required="" id="exampleInputpwd_2"
+                                                       placeholder="{{trans('vexe.register_pass_tip')}}">
                                             </div>
                                             <div class="form-group">
                                                 <label class="pull-left control-label mb-10" for="exampleInputpwd_3">{{trans('vexe.register_cpass')}}</label>
-                                                <input type="password" name="c_password" class="form-control" required="" id="exampleInputpwd_3" placeholder="{{trans('vexe.register_cpass_tip')}}">
+                                                <input type="password" name="c_password" class="form-control" required="" id="exampleInputpwd_3"
+                                                       placeholder="{{trans('vexe.register_cpass_tip')}}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    <input type="radio" name="acct_type" value="01" checked=""> Chủ hàng
+                                                    <br>
+                                                </label>
+
+                                                <label class="control-label" data-pg-collapsed>
+                                                    <input type="radio" name="acct_type" value="02" checked=""> Chủ xe
+                                                    <br>
+                                                </label>
                                             </div>
                                             <div class="form-group">
                                                 <div class="pr-20 pull-left">

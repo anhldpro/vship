@@ -23,7 +23,8 @@ class Account extends Authenticatable
         'telephone',
         'address',
         'contact_name',
-        'avatar'
+        'avatar',
+        'acct_type'
     ];
 
     protected $hidden = [

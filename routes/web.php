@@ -9,6 +9,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//----------------------------------------LOG-------------------------------------------------
+Route::get('/log','WelcomeController@index');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+//----------------------------------------END LOG-------------------------------------------------
+
 Auth::routes();
 Route::post('/logout','Login\LoginController@getLogout')->name('admin.logout');
 
