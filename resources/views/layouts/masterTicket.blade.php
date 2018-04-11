@@ -22,9 +22,9 @@
     <link rel="stylesheet" type="text/css" href="{{url('css/starwars.css')}}">
     <link href="{{url('css/toastr.min.css')}}" rel="stylesheet"/>
 
+    <script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
     <script src="{{url('js/jquery.min.js')}}" type="text/javascript"></script>
     <script type="text/javascript" src="{{url('js/jquery-migrate-1.2.1.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
     <script type="text/javascript" src="{{url('js/jquery-ui.js')}}"></script>
 
 
@@ -240,10 +240,10 @@
 <script type="text/javascript" src="{{url('js/starwarsjs.js')}}"></script>
 <script type="text/javascript" src="{{url('js/moment.js')}}"></script>
 <script type="text/javascript" src="{{url('js/JQuery.curtail.js')}}"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script type="text/javascript" src="{{url('slick/slick.min.js')}}"></script>
 <script type="text/javascript" src="{{url('js/home.js')}} "></script>
 <script type="text/javascript" src="{{url('js/lang.js')}} "></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script>
     @if ( Session::has('success'))
     toastr.success('{{ session('success')}}');
@@ -270,7 +270,7 @@
         })
     });
 </script>
-{{--   <script>
+<script>
     jQuery(document).ready(function($){
         $("#date_start").datepicker({
           defaultDate: "+1w",
@@ -295,7 +295,7 @@
           }
         });
     });
-  </script> --}}
+  </script>
 <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
