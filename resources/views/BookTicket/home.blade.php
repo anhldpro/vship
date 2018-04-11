@@ -16,7 +16,8 @@
                     <div class="htp">
                         <ul class="ribbon-wrap">
                             <li class="ribbon-left"><a href="">Giảm tới <span>30% &nbsp;</span></a></li>
-                            <li class="ribbon-right"><a data-toggle="modal" data-target="#static-ad" href="">&nbsp;Mã khuyến mãi: <span>EBVN30</span></a></li>
+                            <li class="ribbon-right"><a data-toggle="modal" data-target="#static-ad" href="">&nbsp;Mã
+                                    khuyến mãi: <span>EBVN30</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -318,7 +319,8 @@
                                 <a style="color: #6874ad;" href="{{ route('car.show',$list_car->id)}} ">
                                     <div class="slick-overlay">
                                         <p class="bt-info">{{ trans('vexe.show_more')}}</p>
-                                        <img src="{{ URL::asset('images/car/') }}/{{$list_car->avatar}}" class="img-responsive"
+                                        <img src="{{ URL::asset('images/car/') }}/{{$list_car->avatar}}"
+                                             class="img-responsive"
                                              alt="{{ $list_car->name}}">
                                     </div>
                                 </a>

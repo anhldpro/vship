@@ -9,22 +9,30 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Bootstrap -->
     <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{url('css/normalize.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{url('css/font.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{url('css/font-awesome.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('css/styles.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url('css/normalize.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('css/responsive.css')}}"/>
-    <link rel="stylesheet prefetch" href="{{url('css/bootstrap-datepicker.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('slick/slick-theme.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{url('css/multi-select/bootstrap-select.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('css/jquery-ui.css')}}">
+
+    {{--
     <link rel="stylesheet" type="text/css" href="{{url('css/starwars.css')}}">
     <link href="{{url('css/toastr.min.css')}}" rel="stylesheet"/>
 
-    <script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
+
+    --}}
+
+
+   {{-- <link rel="stylesheet" type="text/css" href="{{url('css/font.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url('css/font-awesome.min.css')}}"/>--}}
+    <link rel="stylesheet prefetch" href="{{url('css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('css/multi-select/bootstrap-select.css')}}">
+
+
+    {{--<script type="text/javascript" src="{{url('js/jquery-migrate-1.2.1.min.js')}}"></script>--}}
     <script src="{{url('js/jquery.min.js')}}" type="text/javascript"></script>
-    <script type="text/javascript" src="{{url('js/jquery-migrate-1.2.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
     <script type="text/javascript" src="{{url('js/jquery-ui.js')}}"></script>
 
 
@@ -177,9 +185,9 @@
 
                 <h4>Đối tác</h4>
                 <div class="col-08 clearfix">
-                    <a target="_blank" href="http://csip.vn/" rel="nofollow"><img src="/Content/vxr/images/logo-csip.png?v=2" style="width: 75px;"></a>
-                    <a target="_blank" href="http://bssc.vn/" rel="nofollow"><img src="/Content/vxr/images/logo-bssc.png?v=2" style="width: 75px; margin-left: 10px;"></a>
-                    <a target="_blank" href="http://shtpic.org/" rel="nofollow"><img src="/Content/vxr/images/logo-shtp-ic.png?v=2" style="width: 75px; margin-left: 10px;"></a>
+                    <a target="_blank" href="http://csip.vn/" rel="nofollow"><img src="" style="width: 75px;"></a>
+                    <a target="_blank" href="http://bssc.vn/" rel="nofollow"><img src="" style="width: 75px; margin-left: 10px;"></a>
+                    <a target="_blank" href="http://shtpic.org/" rel="nofollow"><img src="" style="width: 75px; margin-left: 10px;"></a>
                 </div>
             </div>
         </div>
@@ -234,16 +242,21 @@
 
 
 <script src="{{url('js/multi-select/bootstrap-select.js')}}" type="text/javascript"></script>
-<script type="text/javascript" src="{{url('js/jquery.jcarousel.min.js')}}"></script>
 <script type="text/javascript" src="{{url('js/bootstrap-datepicker.js')}}"></script>
+<script type="text/javascript" src="{{url('js/home.js')}} "></script>
+<script type="text/javascript" src="{{url('slick/slick.min.js')}}"></script>
+<script type="text/javascript" src="{{url('js/lang.js')}} "></script>
+<script type="text/javascript" src="{{url('js/jquery.jcarousel.min.js')}}"></script>
 <script type="text/javascript" src="{{url('js/jcarousel.responsive.js')}}"></script>
+
+{{--
+
+
 <script type="text/javascript" src="{{url('js/starwarsjs.js')}}"></script>
 <script type="text/javascript" src="{{url('js/moment.js')}}"></script>
 <script type="text/javascript" src="{{url('js/JQuery.curtail.js')}}"></script>
-<script type="text/javascript" src="{{url('slick/slick.min.js')}}"></script>
-<script type="text/javascript" src="{{url('js/home.js')}} "></script>
-<script type="text/javascript" src="{{url('js/lang.js')}} "></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+--}}
 <script>
     @if ( Session::has('success'))
     toastr.success('{{ session('success')}}');
@@ -270,7 +283,7 @@
         })
     });
 </script>
-<script>
+{{--   <script>
     jQuery(document).ready(function($){
         $("#date_start").datepicker({
           defaultDate: "+1w",
@@ -295,12 +308,12 @@
           }
         });
     });
-  </script>
-<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+  </script> --}}
+{{--<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>--}}
 <script>
-    var editor_config = {
+    /*var editor_config = {
         path_absolute: "/",
         selector: "textarea.my-editor",
         plugins: [
@@ -380,7 +393,7 @@
         }
     };
 
-    tinymce.init(editor_config);
+    tinymce.init(editor_config);*/
 </script>
 </body>
 
